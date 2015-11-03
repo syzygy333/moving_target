@@ -1,0 +1,15 @@
+.top-left {
+  margin: 0 0 0 0;
+}
+
+.top-right {
+  margin: 0 0 0 600px;
+}
+
+.bottom-right {
+  margin: 600px 0 0 600px;
+}
+
+.bottom-left {
+  margin: 600px 0 0 0;
+}
