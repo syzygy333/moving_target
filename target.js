@@ -1,19 +1,15 @@
 $(document).ready(function() {
-  var position = $('#target').className;
-  $('#target').mouseover(function() {
-    switch(position) {
-      case 'top-left':
-        $('#target').className = "top-right";
-        break;
-      case 'top-right':
-        $('#target').className = "bottom-right";
-        break;
-      case 'bottom-right':
-        $('#target').className = "bottom-left";
-        break;
-      case 'bottom-left':
-        $('#target').className = "top-left";
-        break;
+  var position = $('#target').attr('class');
+  $('#target').hover(function() {
+    $(this).removeClass();
+    if(position === "top-left") {
+      $(this).addClass("top-right");
+    } else if(position === "top-right") {
+      $(this).addClass("bottom-right");
+    } else if(position === "bottom-right") {
+      $(this).addClass("bottom-left");
+    } else {
+      $(this).addClass("top-left");
     };
   });
 });

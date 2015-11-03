@@ -1,15 +1,19 @@
 .top-left {
   margin: 0 0 0 0;
+  transition: margin 2s;
 }
 
 .top-right {
   margin: 0 0 0 600px;
+  transition: margin 2s;
 }
 
 .bottom-right {
   margin: 600px 0 0 600px;
+  transition: margin 2s;
 }
 
 .bottom-left {
   margin: 600px 0 0 0;
+  transition: margin 2s;
 }
